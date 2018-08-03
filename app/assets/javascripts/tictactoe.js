@@ -8,7 +8,7 @@ $(function(){
     $(this).text(move);
   });
 
-  
+
   console.log(state)
 });
 

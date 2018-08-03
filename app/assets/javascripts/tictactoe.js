@@ -7,6 +7,7 @@ $(function(){
   });
 
   var state=["","","","","","","","",""]
+  console.log(state)
 });
 
 

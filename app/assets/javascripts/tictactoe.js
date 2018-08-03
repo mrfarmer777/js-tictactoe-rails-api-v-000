@@ -1,5 +1,6 @@
 // Code your JavaScript / jQuery solution here
 $(function(){
+  console.log("Hello everybody!")
   $('td').on('click',function(){
     var move=player();
     $(this).text(move);

@@ -24,6 +24,7 @@ function updateState(){
   var i=0
   spaces.forEach(function(spc){
     state[i]=spc.innerHTML;
+    i++
   })
   console.log(state)
 }

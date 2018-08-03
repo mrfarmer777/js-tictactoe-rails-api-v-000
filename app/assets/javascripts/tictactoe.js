@@ -3,7 +3,7 @@ var state=["","","","","","","","",""]
 var squares=[];
 
 $(function(){
-  var squares=$("td").toArray();
+  squares=$("td").toArray();
 
 
 

@@ -1,11 +1,10 @@
 // Code your JavaScript / jQuery solution here
 var state=["","","","","","","","",""]
-var squares=$("td").toArray();
+var squares=document.querySelectorAll("td");
 
 $(function(){
+
   $('td').on('click',function(){
-    var move=player();
-    $(this).text(move);
     updateState(this);
   });
 

@@ -23,5 +23,5 @@ function updateState(){
   var spaces=$("td")
   spaces.forEach(function(spc){
     console.log(spc.innerHTML)
-  }
+  })
 }

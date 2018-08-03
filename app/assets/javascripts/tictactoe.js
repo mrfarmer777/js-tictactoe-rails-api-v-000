@@ -22,10 +22,4 @@ function player(){
 function updateState(){
   var space=$("td")[0];
   console.log(space.html);
-  var i=0;
-  spaces.forEach(function(space){
-    state[i]=space.html()
-    i++;
-  })
-  console.log(state);
 }

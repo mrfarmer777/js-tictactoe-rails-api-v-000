@@ -1,5 +1,5 @@
 // Code your JavaScript / jQuery solution here
-var state=["","","","","","","","",""]
+var state=["X","","O","","","","","",""]
 
 $(function(){
   console.log("Hello everybody!")
@@ -8,14 +8,12 @@ $(function(){
     $(this).text(move);
   });
 
-
-  console.log(state)
 });
 
 
 
 function player(){
-  var turn=10-state.filter(String).length
+  var turn=state.filter(String).length
   if(turn%2===0){
     return "O"
   } else {

@@ -5,7 +5,7 @@ $(function(){
     $(this).text(move);
   })
 
-  var state=Array.apply("",9)
+  var state=["","","","","","","","",""]
 })
 
 

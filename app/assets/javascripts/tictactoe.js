@@ -49,7 +49,7 @@ function setMessage(msg){
 function checkWinner(){
   var res=false;
   winCombos.forEach(function(combo){
-    if(checkCombo(combo)){
+    if(checkCombo(combo)===true){
       var winner=state[combo[0]]
       setMessage("Player "+winner+" Won!");
       res=true;

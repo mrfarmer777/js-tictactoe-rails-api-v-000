@@ -1,7 +1,7 @@
 // Code your JavaScript / jQuery solution here
 var state=["","","","","","","","",""]
 var squares=[];
-var turns=0;
+var turn=0;
 
 $(function(){
   squares=$("td").toArray();
@@ -19,7 +19,7 @@ function attachListeners(){
 
 
 function player(){
-  if(turns%2===0){
+  if(turn%2===0){
     return "O"
   } else {
     return "X"
@@ -27,7 +27,7 @@ function player(){
 }
 
 function updateState(square){
-  turns+=1
+  turn+=1
   var token=player();
   var ind=squares.indexOf(square);
   square.innerHTML=token;
@@ -38,3 +38,5 @@ function updateState(square){
 function setMessage(msg){
   $("#message").text(msg);
 }
+
+function checkWinner()

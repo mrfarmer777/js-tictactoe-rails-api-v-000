@@ -21,5 +21,5 @@ function player(){
 
 function updateState(){
   var spaces=$("td")
-  console.log(spaces)
+  console.log(spaces[0])
 }

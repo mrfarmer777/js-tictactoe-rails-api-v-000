@@ -36,5 +36,5 @@ function updateState(square){
 }
 
 function setMessage(msg){
-  $("#message").text(msg)
+  $("#message").text(msg);
 }

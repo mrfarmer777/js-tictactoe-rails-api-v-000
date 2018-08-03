@@ -20,6 +20,6 @@ function player(){
 }
 
 function updateState(){
-  var spaces=$("td").html();
-  console.log(spaces.html);
+  var spaces=$("td");
+  console.log(spaces[0].html);
 }

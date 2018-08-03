@@ -4,10 +4,12 @@ $(function(){
     var move=player();
     $(this).text(move);
   })
+
+  var state=Array.apply("",9)
 })
 
 
 
 function player(){
-  
+
 }

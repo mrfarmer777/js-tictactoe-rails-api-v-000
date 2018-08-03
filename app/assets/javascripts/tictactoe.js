@@ -21,7 +21,8 @@ function player(){
 
 function updateState(){
   var spaces=$("td").toArray()
+  var i=0
   spaces.forEach(function(spc){
-    console.log(spc.innerHTML)
+    state[i]=spc.innerHTML;
   })
 }

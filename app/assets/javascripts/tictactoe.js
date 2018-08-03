@@ -20,7 +20,7 @@ function player(){
 }
 
 function updateState(){
-  var spaces=$("td")
+  var spaces=$("td").toArray()
   spaces.forEach(function(spc){
     console.log(spc.innerHTML)
   })

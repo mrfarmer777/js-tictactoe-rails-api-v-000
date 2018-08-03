@@ -10,7 +10,7 @@ var winCombos=[
   [1,4,7],
   [2,5,8],
   [0,4,8],
-  [2,4,6],
+  [2,4,6]
 ]
 
 $(function(){
@@ -49,4 +49,14 @@ function setMessage(msg){
   $("#message").text(msg);
 }
 
-function checkWinner()
+function checkWinner(){
+  
+}
+
+function checkCombo(combo){
+  if(state[combo[0]]===state[combo[1]] && state[combo[2]]===state[combo[1]]){
+    return true;
+  } else {
+    return false;
+  }
+}

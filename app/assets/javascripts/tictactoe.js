@@ -1,6 +1,6 @@
 // Code your JavaScript / jQuery solution here
 var state=["","","","","","","","",""]
-
+var squares=[];
 
 $(function(){
   var squares=$("td").toArray();
@@ -12,7 +12,7 @@ $(function(){
 function attachListeners(){
   $('td').on('click',function(){
     updateState(this);
-  });  
+  });
 }
 
 

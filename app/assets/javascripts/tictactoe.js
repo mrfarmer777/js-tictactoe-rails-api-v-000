@@ -1,4 +1,6 @@
 // Code your JavaScript / jQuery solution here
+var state=["","","","","","","","",""]
+
 $(function(){
   console.log("Hello everybody!")
   $('td').on('click',function(){
@@ -6,7 +8,7 @@ $(function(){
     $(this).text(move);
   });
 
-  var state=["","","","","","","","",""]
+  
   console.log(state)
 });
 

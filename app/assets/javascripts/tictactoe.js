@@ -1,9 +1,9 @@
 // Code your JavaScript / jQuery solution here
 var state=["","","","","","","","",""]
-var squares=document.querySelectorAll("td");
+
 
 $(function(){
-
+  var squares=document.querySelectorAll("td");
   $('td').on('click',function(){
     updateState(this);
   });

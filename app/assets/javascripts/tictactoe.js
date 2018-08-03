@@ -3,12 +3,17 @@ var state=["","","","","","","","",""]
 
 
 $(function(){
-  
-  $('td').on('click',function(){
-    updateState(this);
-  });
+  var squares=$("td").toArray();
+
+
 
 });
+
+function attachListeners(){
+  $('td').on('click',function(){
+    updateState(this);
+  });  
+}
 
 
 function player(){

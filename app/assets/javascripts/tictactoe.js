@@ -50,7 +50,14 @@ function setMessage(msg){
 }
 
 function checkWinner(){
-  
+
+  winCombos.forEach(function(combo){
+    if(checkCombo(combo)){
+      var winner=state[combo[0]].innerHTML
+      setmessage("Player "+winner+" Won!");      
+    }
+  })
+  return false;
 }
 
 function checkCombo(combo){

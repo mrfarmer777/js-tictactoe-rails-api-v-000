@@ -34,3 +34,7 @@ function updateState(square){
   state[ind]=token
   console.log(state)
 }
+
+function setMessage(msg){
+  $("#message").text(msg)
+}

@@ -51,6 +51,7 @@ function checkWinner(){
     if(checkCombo(combo)){
       var winner=state[combo[0]].innerHTML
       setMessage("Player "+winner+" Won!");
+      return true;
     }
   })
   return false;

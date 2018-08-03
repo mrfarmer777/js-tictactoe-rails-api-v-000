@@ -23,7 +23,7 @@ function player(){
 
 function updateState(square){
   var token=player();
-  var ind=squares.index(square);
+  var ind=squares.indexOf(square);
   square.innerHTML=token;
   state[ind]=token
 }

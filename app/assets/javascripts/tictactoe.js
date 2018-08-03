@@ -3,7 +3,7 @@ var state=["","","","","","","","",""]
 
 
 $(function(){
-  var squares=document.querySelectorAll("td");
+  
   $('td').on('click',function(){
     updateState(this);
   });

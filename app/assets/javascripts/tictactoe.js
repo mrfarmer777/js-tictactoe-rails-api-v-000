@@ -12,7 +12,7 @@ $(function(){
 
 
 function player(){
-  var turn=9-state.filter(String).length
+  var turn=10-state.filter(String).length
   if(turn%2===0){
     return "O"
   } else {

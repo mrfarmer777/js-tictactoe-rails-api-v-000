@@ -20,9 +20,9 @@ function attachListeners(){
 
 function player(){
   if(turns%2===0){
-    return "X"
-  } else {
     return "O"
+  } else {
+    return "X"
   }
 }
 

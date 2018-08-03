@@ -1,15 +1,13 @@
 // Code your JavaScript / jQuery solution here
-var state=["X","","O","","","","","",""]
+var state=["","","","","","","","",""]
 
 $(function(){
-  console.log("Hello everybody!")
   $('td').on('click',function(){
     var move=player();
     $(this).text(move);
   });
 
 });
-
 
 
 function player(){
@@ -19,4 +17,14 @@ function player(){
   } else {
     return "O"
   }
+}
+
+function updateState(){
+  var spaces=$("td");
+  console.log(spaces);
+  var i=0;
+  spaces.map(function(space){
+    state[i]=space.text()
+  })
+  console.log(state);
 }

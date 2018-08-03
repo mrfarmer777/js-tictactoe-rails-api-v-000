@@ -52,7 +52,7 @@ function checkWinner(){
     if(checkCombo(combo)){
       var winner=state[combo[0]]
       setMessage("Player "+winner+" Won!");
-      res= true;
+      res=true;
     }
   })
   return res;

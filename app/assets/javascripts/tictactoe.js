@@ -1,6 +1,6 @@
 // Code your JavaScript / jQuery solution here
 var state=["","","","","","","","",""]
-var squares=$("td");
+var squares=$("td").toArray();
 
 $(function(){
   $('td').on('click',function(){
@@ -23,7 +23,7 @@ function player(){
 
 function updateState(square){
   var token=player();
-  var ind=squares.indexOf(square);
+  var ind=squares.index(square);
   square.innerHTML=token;
   state[ind]=token
 }

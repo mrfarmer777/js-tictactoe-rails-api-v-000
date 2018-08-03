@@ -19,8 +19,7 @@ function attachListeners(){
 
 
 function player(){
-  var turn=state.filter(String).length
-  if(turn%2===0){
+  if(turns%2===0){
     return "X"
   } else {
     return "O"

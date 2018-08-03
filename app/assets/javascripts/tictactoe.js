@@ -16,9 +16,6 @@ var winCombos=[
 $(function(){
   squares=$("td").toArray();
   attachListeners();
-
-
-
 });
 
 function attachListeners(){
@@ -50,11 +47,10 @@ function setMessage(msg){
 }
 
 function checkWinner(){
-
   winCombos.forEach(function(combo){
     if(checkCombo(combo)){
       var winner=state[combo[0]].innerHTML
-      setmessage("Player "+winner+" Won!");
+      setMessage("Player "+winner+" Won!");
     }
   })
   return false;

@@ -47,14 +47,15 @@ function setMessage(msg){
 }
 
 function checkWinner(){
+  var res=false;
   winCombos.forEach(function(combo){
     if(checkCombo(combo)){
       var winner=state[combo[0]].innerHTML
       setMessage("Player "+winner+" Won!");
-      return true;
+      res= true;
     }
   })
-  return false;
+  return res;
 }
 
 function checkCombo(combo){

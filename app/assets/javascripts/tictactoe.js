@@ -4,6 +4,7 @@ var squares=[];
 
 $(function(){
   squares=$("td").toArray();
+  attachListeners();
 
 
 

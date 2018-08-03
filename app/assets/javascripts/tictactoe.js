@@ -25,6 +25,7 @@ function updateState(){
   var i=0;
   spaces.forEach(function(space){
     state[i]=space.html()
+    i++;
   })
   console.log(state);
 }

@@ -24,7 +24,7 @@ function updateState(){
   console.log(spaces);
   var i=0;
   spaces.map(function(space){
-    state[i]=space.text()
+    state[i]=space.html()
   })
   console.log(state);
 }

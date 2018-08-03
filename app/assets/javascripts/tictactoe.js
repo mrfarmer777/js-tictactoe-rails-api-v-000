@@ -23,7 +23,7 @@ function updateState(){
   var spaces=$("td");
   console.log(spaces);
   var i=0;
-  spaces.map(function(space){
+  spaces.forEach(function(space){
     state[i]=space.html()
   })
   console.log(state);

@@ -25,7 +25,4 @@ function updateState(square){
   var ind=squares.indexOf(square);
   square.innerHTML=token;
   state[ind]=token
-  end
-  
-  
 }
